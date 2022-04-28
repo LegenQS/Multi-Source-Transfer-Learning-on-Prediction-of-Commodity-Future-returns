@@ -1,5 +1,5 @@
 # Multi-Source-Transfer-Learning-on-Prediction-of-Commodity-Future-returns
-## Get the dataset which we refer to
+## 1. Get the dataset which we refer to
 1. Please download dataset from https://www.kaggle.com/datasets/mattiuzc/commodity-futures-price-history and specify your dataset path as `dataset_path`
 2. Details about the dataset:  
 
@@ -16,7 +16,7 @@ For more information about the distribution, here are some indexes to display:
 
 
 
-## Get package to import 
+## 2. Get package to import 
 1. Run the following command to get package `ta-lib` loaded:
 ```
 url = 'https://launchpad.net/~mario-mariomedina/+archive/ubuntu/talib/+files'
@@ -27,5 +27,5 @@ ext = '0.4.0-oneiric1_amd64.deb -qO'
 !pip install ta-lib
 ```
 
-## Run the project
+## 3. Run the project
 1. To get the data of the distribution of the whole commodity, run:
