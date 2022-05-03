@@ -17,11 +17,8 @@ from sklearn.metrics import mean_squared_error
 import talib as ta
 
 img_path = './img'
-csv_path = './csv'
 corr_type = 'WD'
 repetition = 5
-retrained = False
-base_repetition = 20
 ntl_repetition = 10
 label = 'return'
 
@@ -29,20 +26,18 @@ if len(sys.argv) >= 4:
     try:
         data_path = sys.argv[1]
         model_path  = sys.argv[2]
-        commodity = sys.argv[3]
+        csv_path = sys.argv[3]
+        commodity = sys.argv[4]
         
         if not os.path.exists(data_path):
             print('data_path not exists!')
             sys.exit()
 
-        label = sys.argv[4]
-        img_path = sys.argv[5]
-        csv_path = sys.argv[6]
+        label = sys.argv[5]
+        img_path = sys.argv[6]
         corr_type = sys.argv[7]
-        repetition = int(sys.argv[8])
-        retrained = bool(int(sys.argv[9]))
-        base_repetition = int(sys.argv[10])
-        ntl_repetition = int(sys.argv[11])
+        repetition = int(sys.argv[9])
+        ntl_repetition = int(sys.argv[12])
     except:
         print('values not provided will be set as default values')
 else:
