@@ -11,6 +11,9 @@ if len(sys.argv) >= 2:
     try:
         data_path = sys.argv[1]
         img_path = sys.argv[2]
+        
+        if not os.path.exists(img_path):
+            os.makedirs(img_path)
     except:
         print('img_path will be set as default')
 else:
