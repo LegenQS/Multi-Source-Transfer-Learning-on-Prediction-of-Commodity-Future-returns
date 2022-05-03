@@ -71,13 +71,12 @@ Above first four parameters are required to be provided when running the code, o
 ```
 !python corr_cal.py data_path commodity (img_path) (csv_path) (corr_type) (corr_threshold)
 ```
-#### 3. Train the base model for transfer learning by the result of correlation comparison by specifying `data_path`, `model_path`, `csv_path`, `commodity` and `retrained`. If `retrained` is not provided, please make sure you have downloaded the pretrained model here[]. Other optional parameters are `retrained`, `base_repetition`, `label` and `corr_type`.
+#### 3. Train the base model for transfer learning by the result of correlation comparison by specifying `data_path`, `model_path`, `csv_path`, `commodity` and `retrained`. If `retrained` is not provided, please make sure you have downloaded the pretrained model here[]. Other optional parameters are `retrained`, `label`, `corr_type` and `base_repetition`.
 ```
-!python base_model_train.py data_path model_path csv_path commodity (retrained) (base_repetition) (label) (corr_type)
-```
-
-#### 4. Use transfer learnning with the base model to predict your estimated return profit by specifying `data_path`, `model_path`, `csv_path` and `commodity`. Other parameters including `img_path`, `corr_type`, `label`, `retrained`, `repetition`, `ntl_repetition`, `label` and `corr_type`.
-```
-!python transfer_learning.py data_path model_path csv_path commodity (img_path) (corr_type) (label) (retrained) (repetition) (ntl_repetition) (label)
+!python base_model_train.py data_path model_path csv_path commodity (retrained) (label) (corr_type) (base_repetition)
 ```
 
+#### 4. Use transfer learnning with the base model to predict your estimated return profit by specifying `data_path`, `model_path`, `csv_path` and `commodity`. Other parameters including `label`, `img_path`, `corr_type`, `repetition`, `ntl_repetition`.
+```
+!python transfer_learning.py data_path model_path csv_path commodity (label) (img_path) (corr_type) (repetition) (ntl_repetition)
+```
