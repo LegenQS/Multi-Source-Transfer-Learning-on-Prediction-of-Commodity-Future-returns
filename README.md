@@ -43,11 +43,10 @@ ext = '0.4.0-oneiric1_amd64.deb -qO'
 ## 4. Run the project
 1. Clone the .py to your local dir.
 
-2. Here there are 12 parameters for you to define, and four of them are required, specific details and format are shown as follows:
+2. Here there are 11 parameters for you to define, and three of them are required, specific details and format are shown as follows:
 
 | Parameter       | Information |  
-| -------------   | ------------- |  
-| `cur_dir `      |  current directory you exceute, also the location that results to be stored by default |    
+| -------------   | ------------- |     
 | `data_path`     |  path of the dataset that downloaded |
 | `model_path`    |  the model either you downloaded or the directory that you want the base models to be stored |
 | `commodity`     |  the target commodity type that you'd like to see the trend, transfer learning comparison with non-transfer learning etc. |
