@@ -71,7 +71,7 @@ Above first four parameters are required to be provided when running the code, o
 ```
 !python corr_cal.py data_path commodity (img_path) (csv_path) (corr_type) (corr_threshold)
 ```
-#### 3. Train the base model for transfer learning by the result of correlation comparison by specifying `data_path`, `model_path`, `csv_path`, `commodity` and `retrained`. If `retrained` is not provided, please make sure you have downloaded the pretrained model here[https://github.com/LegenQS/Multi-Source-Transfer-Learning-on-Prediction-of-Commodity-Future-returns/tree/main/model]. Other optional parameters are `retrained`, `label`, `corr_type` and `base_repetition`.
+#### 3. Train the base model for transfer learning by the result of correlation comparison by specifying `data_path`, `model_path`, `csv_path`, `commodity` and `retrained`. If `retrained` is not provided, please make sure you have downloaded the pretrained model [here](https://github.com/LegenQS/Multi-Source-Transfer-Learning-on-Prediction-of-Commodity-Future-returns/tree/main/model). Other optional parameters are `retrained`, `label`, `corr_type` and `base_repetition`.
 ```
 !python base_model_train.py data_path model_path csv_path commodity (retrained) (label) (corr_type) (base_repetition)
 ```
