@@ -1,6 +1,7 @@
 # Multi-Source-Transfer-Learning-on-Prediction-of-Commodity-Future-returns
 ## 1. Get the dataset which we refer to
-1. Please download dataset from https://www.kaggle.com/datasets/mattiuzc/commodity-futures-price-history and specify your dataset path as `dataset_path`
+1. Please download dataset from https://www.kaggle.com/datasets/mattiuzc/commodity-futures-price-history and specify your dataset path as `dataset_path`. You can also download the dataset [here](https://github.com/LegenQS/Multi-Source-Transfer-Learning-on-Prediction-of-Commodity-Future-returns/tree/main/Commodity_Data). 
+
 2. Details about the dataset:  
 
 | Attributes    | Information |  
@@ -12,12 +13,12 @@
 3. Sample format of the file:
 ![image](https://github.com/LegenQS/Multi-Source-Transfer-Learning-on-Prediction-of-Commodity-Future-returns/blob/main/img/sample.png)  
 
-4. For more information about the distribution, here are some indexes to display: 
-1) close price of each commodity
+4. For more information about the distribution, here are some indexes to display:   
+  - close price of each commodity
 ![image](https://github.com/LegenQS/Multi-Source-Transfer-Learning-on-Prediction-of-Commodity-Future-returns/blob/main/img/close.png) 
-2) volume of each commodity
+  - colume of each commodity
 ![image](https://github.com/LegenQS/Multi-Source-Transfer-Learning-on-Prediction-of-Commodity-Future-returns/blob/main/img/volume.png) 
-3) return of each commodity
+  - return of each commodity
 ![image](https://github.com/LegenQS/Multi-Source-Transfer-Learning-on-Prediction-of-Commodity-Future-returns/blob/main/img/return.png) 
 
 ## 2. Download pretrained model
