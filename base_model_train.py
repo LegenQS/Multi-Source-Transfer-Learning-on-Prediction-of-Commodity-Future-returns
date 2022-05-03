@@ -14,17 +14,17 @@ from keras.models import Sequential
 from keras.layers import LSTM,Dense,Dropout,BatchNormalization, CuDNNLSTM,Activation
 import talib as ta
 
-csv_path = './csv'
 corr_type = 'WD'
 retrained = False
 base_repetition = 20
 label = 'return'
 
-if len(sys.argv) >= 4:
+if len(sys.argv) >= 5:
     try:
         data_path = sys.argv[1]
         model_path  = sys.argv[2]
-        commodity = sys.argv[3]
+        csv_path = sys.argv[3]
+        commodity = sys.argv[4]
 
         if not os.path.exists(data_path):
             print('data_path not exists!')
@@ -33,11 +33,10 @@ if len(sys.argv) >= 4:
         if not os.path.exists(model_path):
             os.makedirs(model_path)
 
-        retrained = bool(int(sys.argv[4]))
-        base_repetition = int(sys.argv[5])
+        retrained = bool(int(sys.argv[5]))
         label = sys.argv[6]
-        csv_path = sys.argv[7]
-        corr_type = sys.argv[8]
+        corr_type = sys.argv[7]
+        base_repetition = int(sys.argv[8])
     except:
         print('values not provided will be set as default values')
 else:
