@@ -9,10 +9,16 @@
 | Data Range   | From `2000-01-03` to `2021-06-09` (all data are ranged in this interval)  |  
 | Schema       | `Date`, `Open`, `High`, `Low`, `Close`, `Adj Close`, `Volume` |
 
-Sample format of the file:
-![image]()  
-For more information about the distribution, here are some indexes to display: 
-![image]() 
+3. Sample format of the file:
+![image](https://github.com/LegenQS/Multi-Source-Transfer-Learning-on-Prediction-of-Commodity-Future-returns/blob/main/img/sample.png)  
+
+4. For more information about the distribution, here are some indexes to display: 
+1) close price of each commodity
+![image](https://github.com/LegenQS/Multi-Source-Transfer-Learning-on-Prediction-of-Commodity-Future-returns/blob/main/img/close.png) 
+2) volume of each commodity
+![image](https://github.com/LegenQS/Multi-Source-Transfer-Learning-on-Prediction-of-Commodity-Future-returns/blob/main/img/volume.png) 
+3) return of each commodity
+![image](https://github.com/LegenQS/Multi-Source-Transfer-Learning-on-Prediction-of-Commodity-Future-returns/blob/main/img/return.png) 
 
 ## 2. Download pretrained model
 1. If clone the whole project, pretrained models are located in the `model` dir, if not, please download the models from ...
