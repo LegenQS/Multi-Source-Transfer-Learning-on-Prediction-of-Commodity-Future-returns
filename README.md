@@ -80,3 +80,5 @@ Above first four parameters are required to be provided when running the code, o
 ```
 !python transfer_learning.py data_path model_path csv_path commodity (label) (img_path) (corr_type) (repetition) (ntl_repetition)
 ```
+## 5. Project Description:
+For more details, you can refer to [here](https://github.com/LegenQS/Multi-Source-Transfer-Learning-on-Prediction-of-Commodity-Future-returns/blob/main/description.pdf)
