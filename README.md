@@ -107,9 +107,9 @@ Features: 41 features in total, including price, volume data and other technical
 
 Fine tuning pre-trained model on target training dataset significantly outperforms the model obtained without transfer learning in terms of out-of-sample Mean Absolute Error ,Mean Squared Error and backtesting strategy return. Results are shown through statistics and plots.
 
-PS: Our trading strategy is simple. Long the future contract when the model predicts positive. Short the future contract when the model predicts negative. Everytime when our position has a 5% loss, clear the position immediately and stop trading until tomorrow. 
+Our trading strategy is simple. Long the future contract when the model predicts positive. Short the future contract when the model predicts negative. Everytime when our position has a 5% loss, clear the position immediately and stop trading until tomorrow. 
 
-MAE and MSE improvement WTL compared with WAETL
+MAE and MSE improvement WTL compared with WAETL testing performance
 
 <img width="579" alt="image" src="https://user-images.githubusercontent.com/93000888/167306103-2f1d1d4a-1633-4641-ad5e-1cf58b360b15.png">
 
@@ -122,6 +122,7 @@ Bactesting cummulative return for multiple models compared with merely longing t
 <img width="678" alt="image" src="https://user-images.githubusercontent.com/93000888/167306032-dd35cc0c-b747-4e15-85c4-8b9becd7e468.png">
 
 Bactesting TL model cummulative return based on single-source(heating oil) multiple pretrained models to see influence of randomness in pretraining
+
 <img width="663" alt="image" src="https://user-images.githubusercontent.com/93000888/167306041-364851d3-e037-4ba0-a6d4-14ad9a5f9b1f.png">
 
 We can see in terms of testing loss and backtesting performance, the model was improved significantly.
