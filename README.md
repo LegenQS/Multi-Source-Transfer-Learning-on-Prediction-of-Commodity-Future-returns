@@ -109,11 +109,16 @@ Fine tuning pre-trained model on target training dataset significantly outperfor
 
 PS: Our trading strategy is simple. Long the future contract when the model predicts positive. Short the future contract when the model predicts negative. Everytime when our position has a 5% loss, clear the position immediately and stop trading until tomorrow. 
 
-<img width="613" alt="image" src="https://user-images.githubusercontent.com/93000888/167306005-11745579-d4c9-4845-9c43-074f769bfd07.png">
+MAE and MSE improvement WTL compared with WAETL
+<img width="579" alt="image" src="https://user-images.githubusercontent.com/93000888/167306103-2f1d1d4a-1633-4641-ad5e-1cf58b360b15.png">
+<img width="581" alt="image" src="https://user-images.githubusercontent.com/93000888/167306128-9593e0f7-b6ee-453e-9efd-2624f53aeb05.png">
+
+Bactesting cummulative return for multiple models compared with merely longing the commodity future
 <img width="621" alt="image" src="https://user-images.githubusercontent.com/93000888/167306022-a5039fa0-c9fa-4c23-920f-b8cb5393a0cd.png">
 <img width="678" alt="image" src="https://user-images.githubusercontent.com/93000888/167306032-dd35cc0c-b747-4e15-85c4-8b9becd7e468.png">
+Bactesting TL model cummulative return based on single-source(heating oil) multiple pretrained models to see influence of randomness in pretraining
 <img width="663" alt="image" src="https://user-images.githubusercontent.com/93000888/167306041-364851d3-e037-4ba0-a6d4-14ad9a5f9b1f.png">
-
+We can see in terms of testing loss and backtesting performance, the model was improved significantly.
 
 ### Conclusion
 
