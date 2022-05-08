@@ -81,4 +81,33 @@ Above first four parameters are required to be provided when running the code, o
 !python transfer_learning.py data_path model_path csv_path commodity (label) (img_path) (corr_type) (repetition) (ntl_repetition)
 ```
 ## 5. Project Description:
-For more details, you can refer to [here](https://github.com/LegenQS/Multi-Source-Transfer-Learning-on-Prediction-of-Commodity-Future-returns/blob/main/description.pdf)
+For pdf version, you can refer to [here](https://github.com/LegenQS/Multi-Source-Transfer-Learning-on-Prediction-of-Commodity-Future-returns/blob/main/description.pdf)
+
+### Overview
+
+Financial time series prediction is always a difficult task for data scientists to tackle. The difficulty does not only come from the irrational financial market and unpredictable reactions from emotional participants but also the lack of data availability especially when we are considering a low frequency situation such as daily return of commodity futures. Our project mainly focuses on the second problem and aims to utilize a transfer learning method to improve model prediction performance, which is usually present in the Computer Vision field. 
+
+### Motivation
+
+Different commodity future contracts of the same category should have similar time series patterns, which can be learned by the LSTM model. If we first obtained a pre-trained model based on other similar datasets, such a pretrained model should be a good starting point for our target model. Thus, we can try to get different pretrained models from similar datasets and fine tune on the target dataset to see whether transfer learning in this way can help people to predict returns.
+
+### Data Description
+
+Dataset Time Period: train on 2000-2018, test on 2019-2020
+Predict Label: daily commodity return
+Features: 41 features in total, including price, volume data and other technical indicators, without any fundamental information.
+
+
+### Result
+
+Fine tuning pre-trained model on target training dataset significantly outperforms the model obtained without transfer learning in terms of out-of-sample Mean Absolute Error ,Mean Squared Error and backtesting strategy return. Results are shown through statistics and plots.
+
+PS: Our trading strategy is simple. Long the future contract when the model predicts positive. Short the future contract when the model predicts negative. Everytime when our position has a 5% loss, clear the position immediately and stop trading until tomorrow. 
+
+### Conclusion
+
+Transfer learning indeed works in terms of predicting future contract returns. There are some papers indicating that it also works in predicting stock returns. Basically, when training a neural network, we can view transfer learning as providing a good initializer. Fine tuning is just to do regular training but start with a starting point from another pretrained model. Through our observations, we found by transfer learning, neural network usually performs better than most of the regular learning methods on test set. Normally, initializer brings randomness. Thus, trained models based on the same dataset can be quite different. Models generated through transfer learning on most similar dataset would perform similarly or better as the best model among 10 regular models. So, essentially, transfer learning can seen as providing a really perfect initializer, which helps to finally reach the weights that can make the model perform better maybe not on in-sample data but on out-of-sample data.
+
+### Further Possible Improvement
+
+Based on multi-source pretrained models, we can try other methods to ensemble our fine tuned model outputs.
