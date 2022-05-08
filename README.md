@@ -107,7 +107,7 @@ Features: 41 features in total, including price, volume data and other technical
 
 Fine tuning pre-trained model on target training dataset significantly outperforms the model obtained without transfer learning in terms of out-of-sample Mean Absolute Error ,Mean Squared Error and backtesting strategy return. Results are shown through statistics and plots.
 
-Our trading strategy is simple. Long the future contract when the model predicts positive. Short the future contract when the model predicts negative. Everytime when our position has a 5% loss, clear the position immediately and stop trading until tomorrow. 
+Our trading strategy is simple. Long the future contract when the model predicts positive. Short the future contract when the model predicts negative. Everytime when our position has a 5% loss in a single day, clear the position immediately and stop trading until tomorrow. 
 
 MAE and MSE improvement WTL compared with WAETL testing performance
 
