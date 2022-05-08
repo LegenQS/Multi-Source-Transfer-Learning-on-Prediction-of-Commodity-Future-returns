@@ -111,6 +111,12 @@ Our trading strategy is simple. Long the future contract when the model predicts
 
 MAE and MSE improvement WTL compared with WAETL testing performance
 
+Target and Source:
+
+G1: 'Palladium' <- ['Platinum', 'Gold', 'Copper', 'Silver']
+
+G2: 'Crude Oil' <- ['Heating Oil', 'Brent Crude Oil']
+
 <img width="579" alt="image" src="https://user-images.githubusercontent.com/93000888/167306103-2f1d1d4a-1633-4641-ad5e-1cf58b360b15.png">
 
 <img width="581" alt="image" src="https://user-images.githubusercontent.com/93000888/167306128-9593e0f7-b6ee-453e-9efd-2624f53aeb05.png">
