@@ -117,11 +117,14 @@ G1: 'Palladium' <- ['Platinum', 'Gold', 'Copper', 'Silver']
 
 G2: 'Crude Oil' <- ['Heating Oil', 'Brent Crude Oil']
 
+
 <img width="579" alt="image" src="https://user-images.githubusercontent.com/93000888/167306103-2f1d1d4a-1633-4641-ad5e-1cf58b360b15.png">
 
 <img width="581" alt="image" src="https://user-images.githubusercontent.com/93000888/167306128-9593e0f7-b6ee-453e-9efd-2624f53aeb05.png">
 
 Bactesting cummulative return for multiple models compared with merely longing the commodity future
+
+LHS: WTL models; RHS: TL models from differen sources
 
 <img width="621" alt="image" src="https://user-images.githubusercontent.com/93000888/167306022-a5039fa0-c9fa-4c23-920f-b8cb5393a0cd.png">
 
