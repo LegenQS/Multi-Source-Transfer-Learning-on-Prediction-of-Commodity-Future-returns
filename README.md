@@ -124,7 +124,7 @@ G2: 'Crude Oil' <- ['Heating Oil', 'Brent Crude Oil']
 
 Bactesting cummulative return for multiple models compared with merely longing the commodity future
 
-LHS: WTL models; RHS: TL models from differen sources
+LHS: WTL models; RHS: TL models from different sources
 
 <img width="621" alt="image" src="https://user-images.githubusercontent.com/93000888/167306022-a5039fa0-c9fa-4c23-920f-b8cb5393a0cd.png">
 
