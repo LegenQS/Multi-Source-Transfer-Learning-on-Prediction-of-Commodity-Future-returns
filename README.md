@@ -109,6 +109,12 @@ Fine tuning pre-trained model on target training dataset significantly outperfor
 
 PS: Our trading strategy is simple. Long the future contract when the model predicts positive. Short the future contract when the model predicts negative. Everytime when our position has a 5% loss, clear the position immediately and stop trading until tomorrow. 
 
+<img width="613" alt="image" src="https://user-images.githubusercontent.com/93000888/167306005-11745579-d4c9-4845-9c43-074f769bfd07.png">
+<img width="621" alt="image" src="https://user-images.githubusercontent.com/93000888/167306022-a5039fa0-c9fa-4c23-920f-b8cb5393a0cd.png">
+<img width="678" alt="image" src="https://user-images.githubusercontent.com/93000888/167306032-dd35cc0c-b747-4e15-85c4-8b9becd7e468.png">
+<img width="663" alt="image" src="https://user-images.githubusercontent.com/93000888/167306041-364851d3-e037-4ba0-a6d4-14ad9a5f9b1f.png">
+
+
 ### Conclusion
 
 Transfer learning indeed works in terms of predicting future contract returns. There are some papers indicating that it also works in predicting stock returns. Basically, when training a neural network, we can view transfer learning as providing a good initializer. Fine tuning is just to do regular training but start with a starting point from another pretrained model. Through our observations, we found by transfer learning, neural network usually performs better than most of the regular learning methods on test set. Normally, initializer brings randomness. Thus, trained models based on the same dataset can be quite different. Models generated through transfer learning on most similar dataset would perform similarly or better as the best model among 10 regular models. So, essentially, transfer learning can seen as providing a really perfect initializer, which helps to finally reach the weights that can make the model perform better maybe not on in-sample data but on out-of-sample data.
