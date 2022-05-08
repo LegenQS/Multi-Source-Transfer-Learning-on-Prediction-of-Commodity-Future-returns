@@ -37,8 +37,13 @@ ext = '0.4.0-oneiric1_amd64.deb -qO'
 ```
 
 ### 2. Enable GPU to your runtime:  
-`For Colab`, connect your runtime to GPU runtime;
-`For local host`, ...
+`For Colab`, connect your runtime to GPU runtime;  
+`For local host`, check your gpu availability by:
+```
+import torch
+use_cuda = torch.cuda.is_available()
+device = torch.device("cuda" if use_cuda else "cpu")
+```
 
 ## 4. Run the project
 ### 1. Clone the .py to your local dir.
